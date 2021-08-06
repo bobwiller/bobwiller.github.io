@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.kangarootime.k2staff",
+                 "sha256_cert_fingerprints": ["2D:64:6E:83:FD:39:97:91:D5:0D:3E:CD:A4:B6:07:D4:81:4B:B6:83:3A:0C:2C:75:95:03:B6:24:BF:8A:5F:C3"] }
+  }]
