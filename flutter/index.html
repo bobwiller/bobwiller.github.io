@@ -30,11 +30,38 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBj3HW7cBqQu9c08eD803CUQ-LoHgkGgG0",
+      authDomain: "k2-kiosk.firebaseapp.com",
+      projectId: "k2-kiosk",
+      storageBucket: "k2-kiosk.appspot.com",
+      messagingSenderId: "278694801863",
+      appId: "1:278694801863:web:50d0f64f456d7d8bc069e2",
+      measurementId: "G-XSSDMG9FM7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
        <script>
-        var serviceWorkerVersion = '3715224204';
+        var serviceWorkerVersion = '3353891722';
         var scriptLoaded = false;
         function loadMainDartJs() {
           if (scriptLoaded) {
@@ -98,30 +125,5 @@
         }
       </script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyBj3HW7cBqQu9c08eD803CUQ-LoHgkGgG0",
-      authDomain: "k2-kiosk.firebaseapp.com",
-      projectId: "k2-kiosk",
-      storageBucket: "k2-kiosk.appspot.com",
-      messagingSenderId: "278694801863",
-      appId: "1:278694801863:web:50d0f64f456d7d8bc069e2",
-      measurementId: "G-XSSDMG9FM7"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
-
-  <script src="main.dart.js?v=1.2.0" type="application/javascript"></script>
 </body>
 </html>
